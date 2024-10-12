@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Other Content Below the Image -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="1400dp"
+            android:background="@drawable/edittext_background">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toStartOf="@+id/maleIcon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+            <ImageView
+                android:id="@+id/maleIcon"
+                android:layout_width="122dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/maleicon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/camicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_camera_alt_24"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toTopOf="@+id/maleIcon" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="User Name"
+                android:textColor="@color/grey"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/maleIcon"
+                app:layout_constraintStart_toStartOf="@+id/maleIcon"
+                app:layout_constraintTop_toBottomOf="@+id/maleIcon" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="user@gmail.com"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView2"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/white_background"
+                android:elevation="3dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:padding="10dp"
+                    android:text="Personal Information"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Name:"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edittextname"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/edittext_background"
+                    android:hint="Name"
+                    android:padding="12dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/bday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="10dp"
+                    android:text="Date of Birth:"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/edittext_background"
+                    android:hint="DOB"
+                    android:inputType="none"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="10dp"
+                    android:text="Gender:"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/Gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/edittext_background"
+                    android:hint="Male / Female"
+                    android:inputType="none"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:id="@+id/bloodtype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="10dp"
+                    android:text="Blood Type:"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/blood"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/edittext_background"
+                    android:hint="A+/ A-/ B+/ B-/ AB+/ AB-/ O+/ O-"
+                    android:inputType="none"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/medicalhistorytext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="10dp"
+                    android:text="Medical History:"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.028"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Weight" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/historytext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/edittext_background"
+                    android:gravity="top"
+                    android:hint="History"
+                    android:inputType="textMultiLine"
+                    android:lines="6"
+                    android:overScrollMode="always"
+                    android:padding="12dp"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@+id/medicalhistorytext" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/save"
+                android:layout_width="300dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/blue_background"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/qrbtn"
+                android:layout_width="300dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/blue_background"
+                android:text="Generate QR Code"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/save" />
+
+            <ImageView
+                android:id="@+id/qrcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintTop_toBottomOf="@+id/qrbtn" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/logout"
+                android:layout_width="300dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/blue_background"
+                android:text="Log Out"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/qrcode" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

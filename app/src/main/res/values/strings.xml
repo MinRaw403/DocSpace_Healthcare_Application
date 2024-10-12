@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DocSpace</string>
+    <string name="Select">Select Item</string>
+    <string name="already_have_an_account_sign_in">Already have an account? Sign in</string>
+    <string name="dont_t_have_an_account_sign_up">Dont\'t have an account? Sign up</string>
+    <string name="history">History</string>
+    <string name="dob">DOB</string>
+</resources>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-192dp"
+        tools:layout_editor_absoluteY="0dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Register"
+                android:textColor="@color/blue"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textAlignment="center"/>
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/prof" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/white"
+                android:outlineAmbientShadowColor="@color/grey"
+                app:cardCornerRadius="35dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/lightgrey"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/registerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/edittext_background"
+                        android:drawableLeft="@drawable/baseline_person_24"
+                        android:drawablePadding="10dp"
+                        android:hint="Name"
+                        android:textColorHint="@color/lightgreyblue"
+                        android:textColor="@color/blue"
+                        android:padding="13dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+                    <EditText
+                        android:id="@+id/registerMail"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:drawableLeft="@drawable/baseline_mail_24"
+                        android:drawablePadding="10dp"
+                        android:textColorHint="@color/lightgreyblue"
+                        android:textColor="@color/blue"
+                        android:hint="E-mail"
+                        android:padding="13dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/registerName" />
+
+                    <EditText
+                        android:id="@+id/registerPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:drawableLeft="@drawable/baseline_lock_24"
+                        android:drawablePadding="10dp"
+                        android:textColorHint="@color/lightgreyblue"
+                        android:textColor="@color/blue"
+                        android:hint="Password"
+                        android:padding="13dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/registerMail" />
+
+                    <EditText
+                        android:id="@+id/dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:drawableLeft="@drawable/baseline_calendar_month_24"
+                        android:drawablePadding="10dp"
+                        android:textColorHint="@color/lightgreyblue"
+                        android:textColor="@color/blue"
+                        android:hint="Date of Birth"
+                        android:padding="13dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
+
+                    <EditText
+                        android:id="@+id/gendar"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:drawableLeft="@drawable/gendar_24"
+                        android:drawablePadding="10dp"
+                        android:textColorHint="@color/lightgreyblue"
+                        android:textColor="@color/blue"
+                        android:hint="Gender"
+                        android:padding="13dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
+
+                    <EditText
+                        android:id="@+id/blood"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_background"
+                        android:drawableLeft="@drawable/baseline_bloodtype_24"
+                        android:drawablePadding="10dp"
+                        android:textColorHint="@color/lightgreyblue"
+                        android:textColor="@color/blue"
+                        android:hint="Blood Type"
+                        android:padding="13dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/historytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_background"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="30dp"
+                        android:drawable="@drawable/baseline_bloodtype_24"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:lines="6"
+                        android:textColorHint="@color/lightgreyblue"
+                        android:textColor="@color/blue"
+                        android:hint="Medical History"
+                        android:padding="12dp"
+                        android:scrollbars="vertical"
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollHorizontally="false"
+                        app:layout_constraintTop_toBottomOf="@+id/medicalhistorytext"
+                        android:layout_marginBottom="20dp"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/registerbtn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/blue_background"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/logintotext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/already_have_an_account_sign_in"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/registerbtn"
+                app:layout_constraintVertical_bias="0.469"
+                tools:layout_editor_absoluteX="-16dp"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

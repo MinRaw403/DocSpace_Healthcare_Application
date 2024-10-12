@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "577079329757",
+    "project_id": "docspace-cb069",
+    "storage_bucket": "docspace-cb069.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577079329757:android:7e2a5307b38e18c6c22c34",
+        "android_client_info": {
+          "package_name": "com.example.docspace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqMLH7rpWsKrCko_utq5PzearJkuZsWGg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
